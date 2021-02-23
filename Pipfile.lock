@@ -1,0 +1,35 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "91f036c1fb6f84e1f7b94bc49da34a6e92f3e59e903453a6d7675f2354ac86ce"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.7"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "csvsort": {
+            "hashes": [
+                "sha256:b2d34042979cd843c29c50ff6cd8e62579e9e0008b7551fbb11f06cfe41004ab"
+            ],
+            "index": "pypi",
+            "version": "==1.6.1"
+        },
+        "csvsorter": {
+            "hashes": [
+                "sha256:2b3c6a944f8541e76ff18d2b14f672a3a936cff5ce7e54a0d4fe1ce90e9248ff"
+            ],
+            "index": "pypi",
+            "version": "==1.4"
+        }
+    },
+    "develop": {}
+}

@@ -1,27 +1,21 @@
 """
 the main file
 """
-from typing import Dict, List
-
-import io_utils
-import validation
+import algorithms
 
 
-def main(csv_file_path: str, column_name: str) -> str:
+def main(csv_file_path: str, column_name: str) -> None:
     """
     the main function
     :param csv_file_path: the csv's path
     :param column_name: the requested column name
     :return: the sorted file
     """
-    parsed_csv: List[Dict[str, int or float]] = io_utils.parse_csv(csv_file_path)
+    algorithms.order_ads_limited(csv_file_path, column_name)
 
-    validation.validate_ads_columns(parsed_csv)
 
-    sorted_csv: List[Dict[str, int or float]] = sorted(parsed_csv, key=lambda item: item[column_name].lower())
+CSV_PATH: str = r"C:\Users\Liron\Desktop\Interviews\Refael\‏‏example_ad_file_limited.csv"
+COLUMN_NAME: str = 'Id'
 
-    out_file_path: str = io_utils.get_output_file_path(csv_file_path)
-
-    io_utils.write_items_to_file(out_file_path, sorted_csv)
-
-    return out_file_path
+main(CSV_PATH, COLUMN_NAME)
+x = 5
