@@ -35,4 +35,3 @@ def _validate_ad_values(column_name: str, column_value: str or int) -> None:
 
     if Config.REQUIRED_FIELDS[column_name] != type(column_value):
         raise Exception(f'Incompatible column: {column_name}')
-

@@ -1,7 +1,7 @@
 """
 a file contains config
 """
-from typing import Dict
+from typing import Dict, List
 
 
 class Config:
@@ -16,5 +16,7 @@ class Config:
         'Nurl': str,
         'CustomerName': str,
     }
+
+    SERVER_REQUIRED_FIELDS: List[str] = ['id', 'name', 'campaign', 'url', 'nurl']
 
     ADS_NUMBER: int = 10

@@ -16,7 +16,7 @@ def order_ads(csv_file_path: str, column_name: str) -> str:
     :param column_name: the requested column name
     :return: the sorted file
     """
-    parsed_csv: List[Dict[str, int or float]] = _parse_csv(csv_file_path)
+    parsed_csv: List[Dict[str, int or float]] = parse_csv(csv_file_path)
 
     validation.validate_ads_columns(parsed_csv)
 
@@ -29,7 +29,7 @@ def order_ads(csv_file_path: str, column_name: str) -> str:
     return out_file_path
 
 
-def _parse_csv(csv_path: str) -> List[Dict[str, str or int]]:
+def parse_csv(csv_path: str) -> List[Dict[str, str or int]]:
     """
     validate the csv
     :param csv_path: the csv's path

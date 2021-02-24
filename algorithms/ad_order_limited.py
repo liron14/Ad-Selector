@@ -1,5 +1,5 @@
 """
-a file contains ad order by given field algorithm
+a file contains ad order by given field algorithm with limited memory use
 """
 from typing import List
 
